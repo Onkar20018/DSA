@@ -1,4 +1,5 @@
 import java.util.Scanner;
+/* TC = BigO(n^2) */
 
 public class My {
     //////////////////////////////////////////////////////////////////
@@ -28,11 +29,11 @@ public class My {
          public static void duplicate(int a[]){
                int dup;
                boolean f =false;
-               for (int i = 0; i < a.length; i++) {
+               for (int i = 0; i < a.length; i++) { /* To render every element to compare */
                     dup=a[i];   
                 for (int j = i+1; j < a.length; j++) {
                         
-                    if (dup==a[j]) {
+                    if (dup==a[j]) { /* Actual Comparison if True returns true  */
                          System.out.println("Dup is "+dup+" at i+"+ i+" j = "+j);
                         f=true;
                        } 

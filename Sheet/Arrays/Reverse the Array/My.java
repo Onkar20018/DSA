@@ -1,5 +1,5 @@
 import java.util.Scanner;
-
+/* TC = BigO(log n) */
 public class My {
     //////////////////////////////////////////////////////////////////
     public static void main(String[] args) {
@@ -29,7 +29,9 @@ public class My {
 ///////////////////////////////////////////////////////////////////////
     public static void reverse(int a[], int n) {
         int c;
-        for (int j = a.length-1, i = 0; i < a.length / 2; i++) {
+        for (int j = a.length-1, i = 0; i < a.length / 2; i++)// i Begins from Start and j Begins from End 
+                                                              // No of comparisions are till Middle of the array  
+        { 
             c = a[i];
             a[i] = a[j];
             a[j] = c;

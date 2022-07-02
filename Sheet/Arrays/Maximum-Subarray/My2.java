@@ -37,7 +37,7 @@ public class My2 {
             int sum = 0;
             for (int j = i; j < a.length; j++) {// This loop is used to  store all the sum values reduces 
                                                 // use of other loop
-                sum += a[j];
+                sum =sum + a[j];
                 max_final = Math.max(sum, max_final);
             }
 

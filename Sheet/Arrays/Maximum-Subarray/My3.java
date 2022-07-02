@@ -4,6 +4,7 @@ import java.util.Scanner;
 // We are using Kadanes's Algorithm 
 // Which uses only 1 for loop
 // It has time complexity as BigO(n)
+// DYNAMIC PRPGRAMMING 
 public class My3 {
     //////////////////////////////////////////////////////////////////
     public static void main(String[] args) {
