@@ -18,7 +18,8 @@ public class My {
         System.out.print("]");
         sc.close();
                min_max(a,n);
-    }
+    } 
+    
     public static void min_max(int a[],int n){
               int max=a[0], min=a[0];///////////Make
         for (int i = 0; i < n; i++) {
