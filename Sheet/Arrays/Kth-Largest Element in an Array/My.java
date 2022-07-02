@@ -1,3 +1,9 @@
+/*
+ *            Here,
+ *                  we first sort the array and then search th kth elent from behin the arrays 
+ *               
+ */
+/* TC = BigO(n^2) */
 import java.util.Scanner;
 
 public class My {
@@ -35,8 +41,9 @@ public class My {
             return;
         }
         int[] ks = new int[a.length];
-        ks = bubble(a);
-        System.out.println("\n" + k + "th Largest Element is :" + ks[ks.length - k]);
+        ks = bubble(a);// To sort array
+        int kth = ks.length - k; // To find index of kth Element 
+        System.out.println("\n" + k + "th Largest Element is :" + ks[kth]);
     }
 
     public static int[] bubble(int a[]) {
