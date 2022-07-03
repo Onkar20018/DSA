@@ -21,6 +21,7 @@ public class My {
             }
         }
         System.out.print("]");
+        System.out.println(""); 
         sc.close();
     }    
         /////////////////////////////////////////////////////////
