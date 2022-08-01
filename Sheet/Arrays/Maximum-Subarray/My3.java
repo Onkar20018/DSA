@@ -36,7 +36,10 @@ public class My3 {
               int curr =0;
               for (int i = 0; i < a.length; i++) { // Loop goes from 0 to n-1
                          curr+=a[i]; // stores sum one by one everytime
-                   if (curr>max_final) { // check if curr sum is greater than the Yet Best Sum
+                    if (curr<0) { // Store curr to zero again if curr is negative and we want max
+                        curr= 0;
+                    }     
+                   else if(curr>=max_final) { // check if curr sum is greater than the Yet Best Sum
                         max_final=curr; 
                    }
               }
