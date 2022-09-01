@@ -1,8 +1,18 @@
+/*      
+ * 
+ *                                                      HERe , We are using arrays
+ *           First we make all characters to Uppercase
+ *           Then we create an array of 26 intehers AS USING HASHING
+ *          we will add 1 everytime a char index comes 
+ *         later we will check which char is repated how many Times
+ */
+
 import java.util.ArrayList;
 
 public class My {
     public static void main(String[] args) {
-        String s = "Mitali is Hot";
+        String s = "Omkarr";
+        System.out.printf("Input is %s\n", s);
         ArrayList<String> k = Duplicate(s);
         for (int i = 0; i < k.size(); i++) {
             System.out.println(k.get(i));
@@ -33,7 +43,7 @@ public class My {
         for (int i = 0; i < arr.length; i++) {
 
             if (arr[i] > 1) { // To check which element is repeated and how many times
-                String x = ((char) (i + 65)) + " is repeated " + arr[i] + " Times";
+                String x = ((char) (i + 65)) + " >Repeated >" + arr[i] + "-Times";
                 ax.add(x);
                 repeated = true;
             }

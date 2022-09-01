@@ -1,3 +1,11 @@
+/*
+ *                      HERE ,
+ *                              We will use  Linked List as it is east to Remove and maintain the array
+ *              We will bring i one by one and check oif i+1 is same as i 
+ *                IF YES then we will remove i+1 and make i-- as to check if 3 times a letter is repeated
+ *                IF No will do nothing
+ * 
+ */
 import java.util.Iterator;
 import java.util.LinkedList;
 
