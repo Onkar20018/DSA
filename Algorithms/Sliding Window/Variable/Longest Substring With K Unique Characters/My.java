@@ -15,10 +15,10 @@ import java.util.HashMap;
 
 public class My {
     public static void main(String[] args) {
-        String s = new String("aabacbebebe");
-       
-        int k = 3;
-              ToS(s, k);
+        String s = new String("abab");
+
+        int k = 2;
+        ToS(s, k);
 
     }
 
@@ -29,23 +29,26 @@ public class My {
 
         char[] ch = s.toCharArray();
         HashMap<Character, Integer> mp = new HashMap<>();
-        while (end < ch.length) {      // To Iterate through array
+        while (end < ch.length) { // To Iterate through array
 
             int val = mp.getOrDefault(ch[end], 0); // If value exist take it else put 0
             mp.put(ch[end], val + 1); // Update map
-        if (mp.size() < k) { // Condition to check if number of characters in map as less than required l
+            if (mp.size() < k) { // Condition to check if number of characters in map as less than required l
                 end++;
             } else if (mp.size() == k) { // If the Size is Hit , Perform actions
-               ans = Math.max(ans, end - start + 1); // Update Ans and move end
-                end++;    
+                System.out.println("Size is Hit");
+                ans = Math.max(ans, end - start + 1); // Update Ans and move end
+                System.out.println("Size now is :" + ans + " at end=" + end);
+                end++;
             } else if (mp.size() > k) { // If size of map Exceeds
-                while (mp.size() > k) {   // Till size of map is exceeding
-
-                    int x = mp.get(ch[start]); 
+                while (mp.size() > k) { // Till size of map is exceeding
+                    int x = mp.get(ch[start]);
                     mp.put(ch[start], x - 1);
-
                     if (mp.get(ch[start]) == 0) {
-                        mp.remove(ch[start]); // Of the character in map is not there anymore in our SLiding Window , then we must remove it
+                        System.out.println("Character " + ch[start] + " is removed at end=" + end);
+                        mp.remove(ch[start]); // Of the character in map is not there anymore in our SLiding Window ,
+                                              // then we must remove it
+
                     }
                     start++;
                 }
