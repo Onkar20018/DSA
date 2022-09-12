@@ -1,3 +1,20 @@
+/*
+ *  Q:Write a function to find the longest common prefix string amongst an array of strings.
+If there is no common prefix, return an empty string "".
+ * 
+ * Input: strs = ["flower","flow","flight"]
+Output: "fl"
+
+Input: strs = ["dog","racecar","car"]
+Output: ""
+Explanation: There is no common prefix among the input strings.
+//////////////////////////////////////////////////////////////////////////////////////////////
+                APPROACH
+                
+
+*/
+
+
 import java.util.Arrays;
 
 public class My {
@@ -17,7 +34,8 @@ public class My {
             boolean match = true;
             for (int j = 1; j < strs.length; j++) {
                 System.out.println("In at i=" + i + " j =" + j );
-                if (strs[j].length() < i || strs[j].charAt(i) != first[i]) {
+                String check = strs[j];
+                if (check.length() < i || check.charAt(i) != first[i]) {
                     match = false;
                 }
             }

@@ -1,16 +1,10 @@
 /*      
  * 
- * 
- *      Q:Print all the duplicates in the input string
- * 
  *                                                      HERe , We are using arrays
  *           First we make all characters to Uppercase
  *           Then we create an array of 26 intehers AS USING HASHING
  *          we will add 1 everytime a char index comes 
  *         later we will check which char is repated how many Times
- * //////////////////////////////////////////////////////////////////////////////////
- *                              APPROACH
- * 
  */
 
 import java.util.ArrayList;

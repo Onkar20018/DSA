@@ -1,18 +1,7 @@
-/*       
-   Q: Given a string S. For each index i(1<=i<=N-1), erase it if s[i] is equal to s[i-1] in the string.
-   Input:
-S = aabb
-Output:  ab 
-
-Input:
-S = aabaa
-Output:  aba
-
-///////////////////////////////////////////////////////////////////////////////////////////////////
-
+/*
  *                      HERE ,
  *                              We will use  Linked List as it is east to Remove and maintain the array
- *              We will bring i one by one and check if i+1 is same as i 
+ *              We will bring i one by one and check oif i+1 is same as i 
  *                IF YES then we will remove i+1 and make i-- as to check if 3 times a letter is repeated
  *                IF No will do nothing
  * 

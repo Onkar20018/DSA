@@ -1,5 +1,9 @@
 
 /* 
+    Q:Given a string s, find the length of the longest substring without repeating characters.
+    Input: s = "abcabcbb"
+Output: 3
+Explanation: The answer is "abc", with the length of 3.
  *             Here, We will use two pointer one Left from start and one Right from End
                Each iteration we will check if character at Right is already there is Map or not
                 If the character at right is there and if it is After the index of Left then it means
