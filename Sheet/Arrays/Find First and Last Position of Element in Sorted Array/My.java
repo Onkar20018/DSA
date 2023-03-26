@@ -19,7 +19,7 @@ public class My {
                 return js;
             }
         }
-        // System.out.println("in");
+        
         boolean find = false;
         int[] k;
         int start = 0;
